@@ -28,12 +28,12 @@
   }
   .menu__link:hover {
     border-radius: 20px;
-    box-shadow: inset 0 0 15px #7cf03d;
+    box-shadow: inset 0 0 15px #04fffb;
     transform: scale(1.1);
   }
   .menu__link:focus {
     border-radius: 20px;
-    box-shadow: inset 0 0 5px #7cf03d;
+    box-shadow: inset 0 0 5px #04fffb;
   }
   .menu__link:hover span:nth-child(1), .menu__link:hover span:nth-child(2) {
     display: none;

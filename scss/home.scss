@@ -44,7 +44,7 @@ header{
                     color: $color-link;
                 }
                 &:focus{
-                    background-color: #7cf03d5b;
+                    background-color: #04fffb5b;
                     color: white;
                 }
 
@@ -121,15 +121,15 @@ header{
                     position: relative;
                     display: inline-block;
                     color: transparent;
-                    -webkit-text-stroke: 0.7px $color-link;
+                    -webkit-text-stroke: 0.7px #7cf03d;
                     animation: display-text 16s linear infinite;
                     animation-delay: calc(-4s * var(--i));
                     &::before{
                         content: attr(data-text);
                         position: absolute;
                         width: 0;
-                        border-right: 2px solid $color-link;
-                        color: $color-link;
+                        border-right: 2px solid #7cf03d;
+                        color: #7cf03d;
                         white-space: nowrap;
                         overflow: hidden;
                         animation: fill-text 4s linear infinite;
@@ -200,8 +200,7 @@ header{
         &__avatar{
             &__box{
                 position: relative;
-                width: 32vw;
-                height: 32vw;
+                @include size(25vw, 25vw);
                 min-width: 150px;
                 min-height: 150px;
                 border-radius: 50%;

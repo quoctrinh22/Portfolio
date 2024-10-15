@@ -41,10 +41,10 @@ header .header .menu__link {
   transition: all 0.25s linear;
 }
 header .header .menu__link:hover {
-  color: #7cf03d;
+  color: #04fffb;
 }
 header .header .menu__link:focus {
-  background-color: rgba(124, 240, 61, 0.3568627451);
+  background-color: rgba(4, 255, 251, 0.3568627451);
   color: white;
 }
 header .header .menu__link:hover span:nth-child(1), header .header .menu__link:hover span:nth-child(2) {
@@ -53,7 +53,7 @@ header .header .menu__link:hover span:nth-child(1), header .header .menu__link:h
 header .header .menu__link span {
   display: block;
   position: absolute;
-  background-color: #7cf03d;
+  background-color: #04fffb;
   transition: all 0.25s linear;
 }
 header .header .menu__link span:nth-child(1) {
@@ -113,8 +113,8 @@ header .home__info .btn__sci__CV {
   padding: 6px 25px;
   border: 2px solid transparent;
   border-radius: 100px;
-  box-shadow: 0 0 10px #7cf03d;
-  background-color: #7cf03d;
+  box-shadow: 0 0 10px #04fffb;
+  background-color: #04fffb;
   text-align: center;
   transition: all 0.3s linear;
 }
@@ -126,15 +126,15 @@ header .home__info .btn__sci__CV a {
 header .home__info .btn__sci__CV:hover {
   background-color: transparent;
   box-shadow: none;
-  border: 2px solid #7cf03d;
+  border: 2px solid #04fffb;
 }
 header .home__info .btn__sci__CV:hover a {
-  color: #7cf03d;
+  color: #04fffb;
 }
 header .home__info .btn__sci__item {
   margin-left: 10px;
   padding: 6px 10px;
-  border: 2px solid #7cf03d;
+  border: 2px solid #04fffb;
   border-radius: 100px;
   text-align: center;
   transition: all 0.3s linear;
@@ -142,20 +142,20 @@ header .home__info .btn__sci__item {
 header .home__info .btn__sci__item:hover {
   border: 2px solid transparent;
   border-radius: 100px;
-  box-shadow: 0 0 10px #7cf03d;
-  background-color: #7cf03d;
+  box-shadow: 0 0 10px #04fffb;
+  background-color: #04fffb;
 }
 header .home__info .btn__sci__item:hover a {
   color: #000000;
 }
 header .home__info .btn__sci__item a {
-  color: #7cf03d;
+  color: #04fffb;
   transition: all 0.3s linear;
 }
 header .home__avatar__box {
   position: relative;
-  width: 32vw;
-  height: 32vw;
+  width: 25vw;
+  height: 25vw;
   min-width: 150px;
   min-height: 150px;
   border-radius: 50%;
@@ -170,7 +170,7 @@ header .home__avatar__box::before, header .home__avatar__box::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  background: conic-gradient(transparent, transparent, transparent, #04fffb);
   animation: border-avatar 8s linear infinite;
 }
 header .home__avatar__box::after {
