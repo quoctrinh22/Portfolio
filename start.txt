@@ -1,0 +1,9 @@
+sass scss/style.scss:css/style.css --watch
+sass scss/home.scss:css/home.css --watch
+sass scss/about.scss:css/about.css --watch
+sass scss/education.scss:css/education.css --watch
+sass scss/skill.scss:css/skill.css --watch
+sass scss/project.scss:css/project.css --watch
+sass scss/review.scss:css/review.css --watch
+sass scss/contact.scss:css/contact.css --watch
+sass scss/responsive.scss:css/responsive.css --watch
