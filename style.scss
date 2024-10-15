@@ -17,7 +17,9 @@ body{
 a{
     text-decoration: none;
     color: white;
+    pointer-events: auto;
 }
+
 ul{
     padding: 0;
     margin: 0;
@@ -88,6 +90,7 @@ li{
         opacity: 1;
         animation: show-bars 0.5s ease-in-out forwards;
         animation-delay: calc(3s + 0.1s * var(--i));
+        pointer-events: none;
     }
 }
 @keyframes show-bars{
