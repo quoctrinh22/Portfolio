@@ -1,0 +1,87 @@
+@import 'variable';
+
+.about{
+    &__header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0 40px;
+        &__text1{
+            color: transparent;
+            font-size: 100px;
+            -webkit-text-stroke: 1px #ffffff83;
+        }
+        &__text2{
+            position: absolute;
+            margin: 0;
+            font-size: 45px;
+            color: $color-title;
+            text-shadow: 0 0 6px $color-title;
+        }
+    }
+    &__content{
+        margin-bottom: 120px;
+        &__image{
+            position: relative;
+            @include max-size(100%);
+            @include min-size(150px);
+            border: 2px dashed $color-link;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: 20px;
+            &::before{
+                content: '';
+                @include size(95%);
+                position: absolute;
+                border: 2px dashed $color-link;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+        }
+        &__text{
+            h2{
+                font-size: 35px;
+            }
+            p{
+                margin-top: 16px;
+            }
+
+        }
+        &__info{
+            .info__list{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 16px;
+            }
+            .info__item{
+                margin-right: 50px;
+                margin-bottom: 10px;
+            }
+        }
+        &__btn{
+            width: 150px;
+            padding: 5px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            border: 2px solid $color-link;
+            border-radius: 100px;
+            text-align: center;
+            transition: all 0.5s linear;
+            a{
+                transition: all 0.5s linear;
+            }
+            &:hover{
+                background-color: $color-link;
+                box-shadow: 0 0 10px $color-link;
+            }
+            &:hover a{
+                color: black;
+            }
+        }
+    }
+}

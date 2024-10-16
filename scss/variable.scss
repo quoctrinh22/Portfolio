@@ -2,4 +2,13 @@
     width: $width;
     height: $height;
 }
+@mixin max-size($max-width, $max-height : $max-width){
+    max-width: $max-width;
+    max-height: $max-height;
+}
+@mixin min-size($min-width, $min-height : $min-width){
+    min-width: $min-width;
+    min-height: $min-height;
+}
 $color-link: #04fffb;
+$color-title: #7cf03d;
