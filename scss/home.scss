@@ -15,7 +15,7 @@ header{
         top: 10px;
         left: 50%;
         transform: translate(-50%, 0);
-        z-index: 2;
+        z-index: 3;
         &__logo{
             font-size: 30px;
             position: relative;
@@ -114,6 +114,8 @@ header{
     .home{
         height: 90vh;
         padding: 0 9% 0;
+        z-index: -1;
+
         &__info{
             h1{
                 font-weight: 700;
@@ -204,8 +206,7 @@ header{
             &__box{
                 position: relative;
                 @include size(25vw, 25vw);
-                min-width: 150px;
-                min-height: 150px;
+                @include min-size(150px);
                 border-radius: 50%;
                 padding: 5px;
                 display: flex;

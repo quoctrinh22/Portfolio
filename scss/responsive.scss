@@ -43,83 +43,66 @@
         }
     }
     .home{
-        &__info{
-            margin-left: -25px;
-            h1{
-                font-size: 30px;
-            }
-            h2{
-                font-size: 25px;
-            }
-            p{
-                font-size: 14px;
-            }
-            a{
-                font-size: 14px;
-            }
-            .btn__sci{
-                .btn__sci__item{
-                    padding: 5px 10px;
-                }    
-            }
-        }
-        &__avatar{
-            margin-left: 50px;
-        }
-    }
-
-    // ==================== //
-}
-
-@media (max-width:768px){
-    .home{
         display: flex;
         flex-direction: column;
         &__info{
             order: 2;
-            margin-left: 10px;
-            width: 100%;
-            h1{
-                display: flex;
-                justify-content: center;
-                font-size: 25px;
-            }
-            h2{
-                display: block;
-                width: 100%;
-                text-align: center;
-            }
-            p{
-                display: none;
-            }
-            .btn__sci{
-                display: flex;
-                flex-direction: column;  
-                &__list{
-                    margin-left: -10px;
-                    margin-top: 10px;
-                }      
-            }
+            margin-top: 100px;
         }
         &__avatar{
             order: 1;
             margin-left: 11px;
-            margin-top: 100px;
+            margin-top: 180px;
+            transform: scale(1.7);
+            &__box{
+                @include size(100%);
+                padding: 3px !important;
+            }
+            &__item{
+                @include size(100%)
+            }
         }
     }
 
     // ==================== //
-    .about{
-        &__header{
-            margin-bottom: 30px;
+    .about__content{
+        flex-direction: column;
+        &__image{
+            margin: 0;
+            margin-top: 50px;
+            transform: scale(1.5);
         }
+        &__text{
+            margin-top: 70px;
+            width: 80%;
+        }
+        &__btn{
+            margin: 0 auto;
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .home{
+        &__avatar{
+            &__box{
+                padding: 3px !important;
+            }
+        }
+    }
+    // ==================== //
+    .about{
+        @include title-style-768;
         &__content{
             flex-direction: column;
             &__image{
                 margin: 0;
+                margin-top: 40px;
             }
             &__text{
-                margin-top: 40px;
+                margin-top: 80px;
+                width: 80%;
             }
             &__btn{
                 margin: 0 auto;
@@ -134,41 +117,77 @@
     .sci{
         display: none;
     }
-
     // ==================== //
-    .about__content{
-        &__text{
-            width: 100%;
+    .home{
+        &__info{
+            margin-top: 50px;
+            margin-left: 10px;
+            h1{
+                display: flex;
+                justify-content: center;
+                font-size: 25px;
+            }
             h2{
-                font-size: 27px;
+                text-align: center;
+            }
+            p{
+                display: none;
+            }
+            .btn__sci{
+                display: flex;
+                flex-direction: column;  
+                &__list{
+                    margin-left: -12px;
+                    margin-top: 10px;
+                }      
             }
         }
-        &__btn{
-            margin: 0 auto;
-            width: 150px;
+        &__avatar{
+            order: 1;
+            margin-left: 11px;
+            margin-top: 110px;
+            transform: scale(1.5);
         }
+    }
+    // ==================== //
+    .about{
+        @include title-style-576;
+        height: auto;
+        &__content{
+            &__text{
+                width: 100%;
+                h2{
+                    font-size: 27px;
+                }
+            }
+            &__btn{
+                margin: 0 auto;
+                width: 150px;
+            }
+        }    
+    }
+    .education{
+        @include title-style-576;
     }
 }
 
 @media (max-width:375px){
     .about{
-        &__header{
-            &__text1{
-                font-size: 80px;
-            }
-            &__text2{
-                font-size: 35px;
-            }
-        }
+        @include title-style-375
+    }
+    .education{
+        @include title-style-375
     }
 }
 
-@media (max-height:600px) {
+@media (max-height: 700px) {
     .scrolldown{
         &__box{
             display: none;
         }
     }
+}
+@media (max-height: 600px) {
     .home{
         &__avatar{
             margin-top: 65px;
