@@ -45,14 +45,27 @@ footer{
             display: flex;
             justify-content: center;
             text-align: center;
+            gap: 50px;
+        }
+        &__items{
+            display: flex;
+            justify-content: center;
+            i{
+                margin-right: 5px;
+            }
         }
     }
     .copyright{
         font-size: 12px;
         font-weight: 500;
         font-style: italic;
+        color: #e6e6e6;
         a{
             color: $color-title;
+        }
+        &::before{
+            content: '*';
+            color: red;
         }
     }
 }
