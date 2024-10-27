@@ -1,0 +1,19 @@
+@import 'variable';
+
+.education{
+    z-index: 1;
+    &__header{
+        @include title-style;
+    }
+    &__items{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            @include size(5px, 100%);
+            background-color: $color-link;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import 'variable';
+
+.education{
+    z-index: 1;
+    &__header{
+        @include title-style;
+    }
+    .timeliner{
+        &__items{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 100%;
+                background-color: $color-link;
+                left: calc(50% - 1px);
+            }
+        }
+        &__item{
+            margin-bottom: 40px;
+            width: 100%;
+            position: relative;
+            &:last-child{
+                margin-bottom: 0;
+                background-color: bisque !important;
+            }
+        }
+    }
+}

@@ -506,27 +506,79 @@ header .scrolldown__box::before {
   color: #7cf03d;
   text-shadow: 0 0 6px #7cf03d;
 }
-
-.skill {
-  z-index: 1;
-}
-.skill__header {
+.education .timeline__items {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 70px 0 40px;
 }
-.skill__header__text1 {
-  color: transparent;
-  font-size: 100px;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5137254902);
-}
-.skill__header__text2 {
+.education .timeline__items::before {
+  content: "";
   position: absolute;
-  font-size: 45px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 5px;
+  height: 100%;
+  background-color: #04fffb;
+}
+.education .timeline__item:not(:nth-child(1)) {
+  margin-top: 30px;
+}
+.education .timeline__item:nth-child(odd) {
+  text-align: right;
+  padding-right: calc(50% + 30px);
+}
+.education .timeline__item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+.education .timeline__date i {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: black;
+  z-index: 1;
+  border: 2px solid #04fffb;
+  padding: 5px 4px;
+  border-radius: 50%;
+  background-color: #04fffb;
+  box-shadow: 0 0 25px #04fffb, 0 0 50px #04fffb;
+}
+.education .timeline__date span {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.education .timeline__date span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  background-color: #04fffb;
+  border-radius: 30px;
+  transition: all 0.5s linear;
+}
+.education .timeline__date span:hover::before {
+  width: 100%;
+  height: 3px;
+}
+.education .timeline__content {
+  display: inline-block;
+  border: 2px dashed white;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 15px 30px;
+  transition: all 0.5s linear;
+  text-align: left;
+}
+.education .timeline__content:hover {
+  transform: scale(1.05);
+}
+.education .timeline__content h3 {
+  font-size: 24px;
   color: #7cf03d;
-  text-shadow: 0 0 6px #7cf03d;
+}
+.education .timeline__content p {
+  margin: 0;
 }
 
 .project {
@@ -1007,9 +1059,6 @@ footer .copyright::before {
     margin-top: 110px;
     transform: scale(1.5);
   }
-  .about {
-    height: auto;
-  }
   .about__header__text1 {
     font-size: 67px;
   }
@@ -1030,12 +1079,6 @@ footer .copyright::before {
     font-size: 67px;
   }
   .education__header__text2 {
-    font-size: 29px;
-  }
-  .skill__header__text1 {
-    font-size: 67px;
-  }
-  .skill__header__text2 {
     font-size: 29px;
   }
   .project__header__text1 {
@@ -1074,12 +1117,6 @@ footer .copyright::before {
     font-size: 50px;
   }
   .education__header__text2 {
-    font-size: 22px;
-  }
-  .skill__header__text1 {
-    font-size: 50px;
-  }
-  .skill__header__text2 {
     font-size: 22px;
   }
   .project__header__text1 {

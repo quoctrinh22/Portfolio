@@ -1,0 +1,21 @@
+@import 'variable';
+
+.education{
+    z-index: 1;
+    &__header{
+        @include title-style;
+    }
+    .timeline{
+        &__items{
+            position: relative;
+            &::before{
+                content: '<i class="fa-solid fa-person"></i>';
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                @include size(5px, 100%);
+                background-color: $color-link;
+            }
+        }
+    }
+}

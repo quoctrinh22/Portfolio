@@ -1,6 +1,6 @@
-@import './variable.scss';
+@import 'variable';
 
-.skill{
+.education{
     z-index: 1;
     &__header{
         @include title-style;

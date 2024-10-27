@@ -1,0 +1,55 @@
+@import 'variable';
+
+.education{
+    z-index: 1;
+    &__header{
+        @include title-style;
+    }
+    .timeline{
+        &__items{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 100%;
+                background-color: $color-link;
+                left: calc(50% - 1px);
+            }
+        }
+        &__item{
+            margin-bottom: 40px;
+            width: 100%;
+            position: relative;
+            &:nth-child(1){
+                margin-bottom: 0;
+            }
+            &:nth-last-child(odd){
+                padding-right: calc(50% + 30px);
+                text-align: right;
+            }
+            &:nth-child(even){
+                padding-left: calc(50% + 30px);
+            }
+        }
+        &__dot{
+            @include size(21px);
+            background-color: $color-link;
+            box-shadow: 0 0 25px $color-link,
+                        0 0 50px $color-link;
+            // position: absolute;
+            // top: 10px;
+            // left: calc(50% - 8px);
+            border-radius: 50%;
+        }
+        // &__date{
+        //     font-size: 20px;
+        //     font-weight: 800;
+        //     color: white;
+        //     margin: 6px 0 15px;
+        // }
+    }
+}
