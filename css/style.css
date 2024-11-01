@@ -431,6 +431,7 @@ header .scrolldown__box::before {
   border: 2px dashed white;
   padding: 5px;
   margin-left: auto;
+  margin-right: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1125,6 +1126,9 @@ footer .copyright::before {
   }
 }
 @media (max-width: 375px) {
+  .home {
+    padding: 0 !important;
+  }
   .home__avatar {
     margin-top: 100px !important;
   }
