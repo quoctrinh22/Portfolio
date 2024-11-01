@@ -2,11 +2,11 @@
 
 .education{
     z-index: 1;
-    margin-bottom: 60px;
     &__header{
         @include title-style;
     }
     .timeline{
+        margin-bottom: 30px;
         &__items{
             position: relative;
             &::before{

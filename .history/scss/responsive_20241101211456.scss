@@ -198,22 +198,21 @@
     .timeline {
       &__items {
         &::before {
-          left: 5%;
+          left: 0;
         }
       }
       &__item {
-        margin-left: 50px;
         &:nth-child(odd) {
           text-align: left;
-          padding-right: 0;
+          padding-right: calc(50% + 30px);
         }
         &:nth-child(even) {
-          padding-left: 0;
+          padding-left: calc(50% + 30px);
         }
       }
       &__date {
         i {
-          left: 5%;
+          left: 0;
         }
       }
     }

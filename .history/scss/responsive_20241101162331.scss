@@ -42,6 +42,8 @@
     }
   }
   .home {
+    top: 30% !important;
+    display: flex;
     flex-direction: column;
     &__info {
       order: 2;
@@ -95,7 +97,6 @@
 @media (max-width: 767px) {
   .home {
     &__avatar {
-      margin-top: 150px !important;
       &__box {
         padding: 3px !important;
       }
@@ -195,28 +196,6 @@
   // ==========education========== //
   .education {
     @include title-style-576;
-    .timeline {
-      &__items {
-        &::before {
-          left: 5%;
-        }
-      }
-      &__item {
-        margin-left: 50px;
-        &:nth-child(odd) {
-          text-align: left;
-          padding-right: 0;
-        }
-        &:nth-child(even) {
-          padding-left: 0;
-        }
-      }
-      &__date {
-        i {
-          left: 5%;
-        }
-      }
-    }
   }
   // ==========project========== //
   .project {
@@ -241,12 +220,6 @@
 }
 
 @media (max-width: 375px) {
-  .home {
-    &__avatar {
-      margin-top: 100px !important;
-    }
-  }
-
   // ==========about========== //
   .about {
     @include title-style-375;

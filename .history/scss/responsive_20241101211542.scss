@@ -198,11 +198,10 @@
     .timeline {
       &__items {
         &::before {
-          left: 5%;
+          left: 0;
         }
       }
       &__item {
-        margin-left: 50px;
         &:nth-child(odd) {
           text-align: left;
           padding-right: 0;
@@ -213,7 +212,7 @@
       }
       &__date {
         i {
-          left: 5%;
+          left: 0;
         }
       }
     }
