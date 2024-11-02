@@ -241,12 +241,7 @@
   // ==========contact========== //
   .footer {
     &__content {
-      .menu__footer {
-        .list {
-          flex-direction: column;
-          gap: 5px !important;
-        }
-      }
+      align-items: start;
     }
   }
 }

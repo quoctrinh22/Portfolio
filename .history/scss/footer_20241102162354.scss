@@ -44,25 +44,23 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       width: 100%;
-      margin: 20px 0 0;
+      margin: 20px 0;
       .logo {
         display: block;
         width: 15%;
-        min-width: 180px;
         .st0 {
           fill: none;
         }
 
         .st1 {
           fill: transparent;
-          stroke: $color-title;
+          stroke: white;
           stroke-width: 3;
           stroke-miterlimit: 10;
           stroke-dasharray: 1800;
           stroke-dashoffset: 0;
-          animation: effecttexxt 3.5s linear infinite alternate;
+          animation: effecttexxt 3s linear infinite alternate;
         }
         @keyframes effecttexxt {
           0% {
@@ -71,29 +69,8 @@ footer {
           }
 
           100% {
-            fill: $color-title;
+            fill: white;
             stroke-dashoffset: 0;
-          }
-        }
-      }
-      .menu__footer {
-        margin: 20px 0;
-        .list {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 15px;
-          .item {
-            a {
-              display: block;
-              border-radius: 30px;
-              padding: 7px 10px;
-              transition: all 0.3s linear;
-              &:hover {
-                color: $color-link;
-                transform: translateY(-5px);
-              }
-            }
           }
         }
       }

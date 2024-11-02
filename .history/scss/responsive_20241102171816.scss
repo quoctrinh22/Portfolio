@@ -241,10 +241,10 @@
   // ==========contact========== //
   .footer {
     &__content {
+      align-items: flex-start;
       .menu__footer {
         .list {
           flex-direction: column;
-          gap: 5px !important;
         }
       }
     }
