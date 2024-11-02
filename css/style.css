@@ -92,7 +92,7 @@ hr {
   background-color: #000000;
   opacity: 1;
   animation: show-bars 0.5s ease-in-out forwards;
-  animation-delay: calc(2s + 0.1s * var(--i));
+  animation-delay: calc(2.5s + 0.1s * var(--i));
   pointer-events: none;
 }
 
@@ -447,7 +447,7 @@ header .scrolldown__box::before {
   width: 100%;
   color: #7cf03d;
   transition: all 0.3s linear;
-  text-shadow: 0 0 3px #7cf03d, 0 0 5px #7cf03d;
+  text-shadow: 0 0 5px #7cf03d;
 }
 .about__content {
   margin-bottom: 120px;
@@ -567,7 +567,7 @@ header .scrolldown__box::before {
   width: 100%;
   color: #7cf03d;
   transition: all 0.3s linear;
-  text-shadow: 0 0 3px #7cf03d, 0 0 5px #7cf03d;
+  text-shadow: 0 0 5px #7cf03d;
 }
 .education .timeline__items {
   position: relative;
@@ -695,7 +695,7 @@ header .scrolldown__box::before {
   width: 100%;
   color: #7cf03d;
   transition: all 0.3s linear;
-  text-shadow: 0 0 3px #7cf03d, 0 0 5px #7cf03d;
+  text-shadow: 0 0 5px #7cf03d;
 }
 
 .review {
@@ -748,7 +748,7 @@ header .scrolldown__box::before {
   width: 100%;
   color: #7cf03d;
   transition: all 0.3s linear;
-  text-shadow: 0 0 3px #7cf03d, 0 0 5px #7cf03d;
+  text-shadow: 0 0 5px #7cf03d;
 }
 
 .contact {
@@ -801,7 +801,7 @@ header .scrolldown__box::before {
   width: 100%;
   color: #7cf03d;
   transition: all 0.3s linear;
-  text-shadow: 0 0 3px #7cf03d, 0 0 5px #7cf03d;
+  text-shadow: 0 0 5px #7cf03d;
 }
 .contact .contact__content {
   margin-bottom: 60px;

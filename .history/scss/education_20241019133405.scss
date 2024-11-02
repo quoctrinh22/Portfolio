@@ -1,8 +1,0 @@
-@import 'variable';
-
-.education{
-    z-index: 1;
-    &__header{
-        @include title-style;
-    }
-}
