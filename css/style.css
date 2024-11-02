@@ -573,6 +573,7 @@ header .scrolldown__box::before {
 }
 .education .timeline__content:hover {
   transform: scale(1.05);
+  border: 2px dashed #7cf03d;
 }
 .education .timeline__content h3 {
   font-size: 24px;
