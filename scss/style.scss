@@ -92,7 +92,7 @@ hr {
     background-color: #000000;
     opacity: 1;
     animation: show-bars 0.5s ease-in-out forwards;
-    animation-delay: calc(2.5s + 0.1s * var(--i));
+    animation-delay: calc(3s + 0.1s * var(--i));
     pointer-events: none;
   }
 }
