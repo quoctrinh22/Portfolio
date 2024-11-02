@@ -1,0 +1,93 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin max-size($max-width, $max-height: $max-width) {
+  max-width: $max-width;
+  max-height: $max-height;
+}
+@mixin min-size($min-width, $min-height: $min-width) {
+  min-width: $min-width;
+  min-height: $min-height;
+}
+@mixin center-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin title-style {
+  margin: 30px 0;
+  h1 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    color: transparent;
+    &:hover span:nth-child(1) {
+      transform: translate(-50%, -12px);
+    }
+    &:hover span:nth-child(2) {
+      transform: translate(-50%, 15px);
+    }
+    &:hover span:nth-child(3) {
+      transform: translate(-50%, -50%) scaleY(1);
+    }
+    span:nth-child(1),
+    span:nth-child(2) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      transition: all 0.3s linear;
+      -webkit-text-stroke: 1px #ffffff83;
+    }
+    span:nth-child(1) {
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    }
+    span:nth-child(2) {
+      clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    }
+    span:nth-child(3) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scaleY(0);
+      font-size: 26px;
+      display: block;
+      width: 100%;
+      color: $color-title;
+      transition: all 0.3s linear;
+    }
+  }
+}
+@mixin title-style-768 {
+  &__header {
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+}
+@mixin title-style-576 {
+  &__header {
+    &__text1 {
+      font-size: 67px;
+    }
+    &__text2 {
+      font-size: 29px;
+    }
+  }
+}
+@mixin title-style-375 {
+  &__header {
+    &__text1 {
+      font-size: 50px;
+    }
+    &__text2 {
+      font-size: 22px;
+    }
+  }
+}
+$color-link: #04fffb;
+$color-title: #7cf03d;
