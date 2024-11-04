@@ -52,17 +52,13 @@ footer {
         width: 15%;
         min-width: 180px;
         .st0 {
-          fill: none;
-        }
-
-        .st1 {
           fill: transparent;
           stroke: $color-title;
           stroke-width: 3;
           stroke-miterlimit: 10;
           stroke-dasharray: 1800;
           stroke-dashoffset: 0;
-          animation: effecttexxt 3.5s linear infinite alternate;
+          animation: effecttexxt 4s linear infinite;
         }
         @keyframes effecttexxt {
           0% {

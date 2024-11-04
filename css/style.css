@@ -10,6 +10,15 @@ body {
   color: white;
   position: relative;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(255, 255, 255, 0.1137254902);
+}
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(-45deg, #7cf03d, #04fffb);
+  border-radius: 20px;
+  animation: scrollbar-animate 4s linear infinite;
+}
 
 .container {
   max-width: 1140px;
@@ -34,17 +43,6 @@ li {
 
 hr {
   margin: 1rem 0 0;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  background-color: rgba(255, 255, 255, 0.1137254902);
-}
-
-::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(-45deg, #7cf03d, #04fffb);
-  border-radius: 20px;
-  animation: scrollbar-animate 4s linear infinite;
 }
 
 #loader {
@@ -1059,16 +1057,13 @@ footer .footer__content .logo {
   min-width: 180px;
 }
 footer .footer__content .logo .st0 {
-  fill: none;
-}
-footer .footer__content .logo .st1 {
   fill: transparent;
   stroke: #7cf03d;
   stroke-width: 3;
   stroke-miterlimit: 10;
   stroke-dasharray: 1800;
   stroke-dashoffset: 0;
-  animation: effecttexxt 3.5s linear infinite alternate;
+  animation: effecttexxt 4s linear infinite;
 }
 @keyframes effecttexxt {
   0% {
