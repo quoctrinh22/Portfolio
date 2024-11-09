@@ -1,8 +1,87 @@
-@import './variable.scss';
+@import "./variable.scss";
 
-.project{
-    z-index: 1;
-    &__header{
-        @include title-style;
+.project {
+  z-index: 1;
+  &__header {
+    @include title-style;
+  }
+  .project__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    .project__items {
+      margin: 12px 15px;
     }
+    .project__link {
+      padding: 3px 20px;
+      border: 2px solid white;
+      border-radius: 30px;
+      transition: all 0.3s linear;
+      &:hover,
+      &:focus {
+        background-color: $color-link;
+        border: 2px solid $color-link;
+        color: #000;
+        box-shadow: 0 0 5px $color-link, 0 0 8px $color-link,
+          0 0 20px $color-link;
+      }
+    }
+  }
+  .project__content {
+    .project__card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      .card__article {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform-style: preserve-3d;
+        @include size(300px, 220px);
+        transition: all 1s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+        border-radius: 12px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include size(100%);
+          background-color: #243137;
+        }
+        &:hover,
+        &::before {
+          transform: rotateY(180deg);
+        }
+
+        .card__imgbox {
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include size(100%);
+            backface-visibility: hidden;
+            @include size(100%);
+            border-radius: 12px;
+            border: 2px solid $color-title;
+          }
+        }
+        .card__data {
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include size(100%);
+          backface-visibility: hidden;
+          overflow: hidden;
+          background-color: #243137;
+          transform: rotateY(180deg);
+          border-radius: 12px;
+          border: 2px solid $color-title;
+        }
+      }
+    }
+  }
 }
