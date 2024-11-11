@@ -36,50 +36,112 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 30px;
-      .card__article {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform-style: preserve-3d;
-        @include size(300px, 220px);
-        transition: all 1s cubic-bezier(0.7, -0.5, 0.3, 1.8);
-        border-radius: 12px;
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          @include size(100%);
-          background-color: #243137;
-        }
-        &:hover,
-        &::before {
+      .card__box {
+        &:hover .card__article {
           transform: rotateY(180deg);
         }
-
-        .card__imgbox {
-          img {
+        &:hover .card__data::before {
+          animation: light-animation 1.5s linear;
+          animation-delay: 1s;
+        }
+        .card__article {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform-style: preserve-3d;
+          @include size(300px, 220px);
+          transition: all 1s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+          border-radius: 12px;
+          .card__imgbox {
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              @include size(100%);
+              backface-visibility: hidden;
+              border-radius: 12px;
+              border: 1px solid #333;
+            }
+          }
+          .card__data {
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
             @include size(100%);
             backface-visibility: hidden;
-            @include size(100%);
+            overflow: hidden;
+            background-color: #333;
+            transform: rotateY(180deg);
             border-radius: 12px;
-            border: 2px solid $color-title;
+            border: 1px solid transparent;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: -100%;
+              transform: translateY(-50%) rotate(45deg);
+              width: 20%;
+              height: 1000%;
+              background-color: #444;
+            }
+            @keyframes light-animation {
+              0% {
+                top: 0;
+                left: -15%;
+              }
+              33% {
+                bottom: 0;
+                left: 200%;
+              }
+              66% {
+                bottom: 0;
+                left: 200%;
+              }
+              100% {
+                top: 0;
+                left: -15%;
+              }
+            }
+            .card__content {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              padding: 10px 20px;
+              .card__title {
+                color: $color-title;
+              }
+              p {
+                font-size: 14px;
+              }
+              .card__btn {
+                position: relative;
+                color: $color-link;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  @include size(0, 1px);
+                  background-color: $color-link;
+                  transition: all 0.3s linear;
+                }
+                &:hover::before {
+                  width: 83%;
+                }
+                i {
+                  font-size: 11px;
+                  opacity: 0;
+                  transform: translateX(-100%);
+                  transition: all 0.3s linear;
+                  transition-delay: 0.3s;
+                }
+                &:hover i {
+                  opacity: 1;
+                  transform: translateX(0);
+                }
+              }
+            }
           }
-        }
-        .card__data {
-          position: absolute;
-          top: 0;
-          left: 0;
-          @include size(100%);
-          backface-visibility: hidden;
-          overflow: hidden;
-          background-color: #243137;
-          transform: rotateY(180deg);
-          border-radius: 12px;
-          border: 2px solid $color-title;
         }
       }
     }
