@@ -788,6 +788,21 @@ header .scrolldown__box::before {
   height: 1000%;
   background: #444;
 }
+.project .project__content .project__card .card__box .card__article .card__data::after {
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #888;
+  border-radius: 30px;
+  transition: all 0.4s linear;
+}
+.project .project__content .project__card .card__box .card__article .card__data:hover::after {
+  width: 77%;
+}
 @keyframes light-animation {
   0% {
     top: 0;
@@ -817,21 +832,6 @@ header .scrolldown__box::before {
   text-align: center;
   margin: 20px 0;
   position: relative;
-}
-.project .project__content .project__card .card__box .card__article .card__data .card__content .card__title::before {
-  content: "";
-  position: absolute;
-  bottom: -30%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0%;
-  height: 2px;
-  background-color: #888;
-  transition: all 0.3s linear;
-}
-.project .project__content .project__card .card__box .card__article .card__data .card__content .card__title:hover::before {
-  width: 80%;
-  height: 2px;
 }
 .project .project__content .project__card .card__box .card__article .card__data .card__content p {
   font-size: 14px;
