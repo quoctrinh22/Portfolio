@@ -810,6 +810,22 @@ header .scrolldown__box::before {
   color: #7cf03d;
   text-align: center;
   margin: 20px 0;
+  position: relative;
+}
+.project .project__content .project__card .card__box .card__article .card__data .card__content .card__title::before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #888;
+  transition: all 0.3s linear;
+}
+.project .project__content .project__card .card__box .card__article .card__data .card__content .card__title:hover::before {
+  width: 80%;
+  height: 2px;
 }
 .project .project__content .project__card .card__box .card__article .card__data .card__content p {
   font-size: 14px;
@@ -1216,12 +1232,15 @@ footer .footer__content .logo .st0 {
   stroke-miterlimit: 10;
   stroke-dasharray: 1800;
   stroke-dashoffset: 0;
-  animation: effecttexxt 4s linear infinite;
+  animation: effecttext 4s linear infinite;
 }
-@keyframes effecttexxt {
+@keyframes effecttext {
   0% {
     fill: transparent;
     stroke-dashoffset: 1800;
+  }
+  75% {
+    fill: transparent;
   }
   100% {
     fill: #7cf03d;

@@ -109,6 +109,20 @@
                 color: $color-title;
                 text-align: center;
                 margin: 20px 0;
+                position: relative;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  bottom: -30%;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  @include size(0%, 2px);
+                  background-color: #888;
+                  transition: all 0.3s linear;
+                }
+                &:hover::before {
+                  @include size(80%, 2px);
+                }
               }
               p {
                 font-size: 14px;
