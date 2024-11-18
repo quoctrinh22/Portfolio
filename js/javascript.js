@@ -9,6 +9,10 @@ $(document).ready(function () {
         $('.menu').slideToggle('show');
     });
 
+    $('#bars').on('touchstart', function () {
+        $('.menu').slideToggle('show');
+    });
+
     $('.menu').click(function () {
         if ($(window).width() <= 992) {
             $('.menu').hide();

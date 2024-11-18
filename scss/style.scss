@@ -9,6 +9,7 @@ body {
   background-color: black;
   color: white;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     width: 5px;
     background-color: #ffffff1d;
@@ -39,6 +40,13 @@ li {
 }
 hr {
   margin: 1rem 0 0;
+}
+
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
 }
 #loader {
   background-color: black;

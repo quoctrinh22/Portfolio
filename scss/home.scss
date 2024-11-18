@@ -224,8 +224,8 @@ header {
   .scrolldown {
     position: absolute;
     bottom: 10%;
-    left: 50%;
-    transform: translate(-40%, 0);
+    left: 49%;
+    transform: translate(-50%, -10%);
 
     &__box {
       @include size(32px, 52px);

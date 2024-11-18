@@ -9,6 +9,7 @@ body {
   background-color: black;
   color: white;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 body::-webkit-scrollbar {
   width: 5px;
@@ -43,6 +44,14 @@ li {
 
 hr {
   margin: 1rem 0 0;
+}
+
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
 }
 
 #loader {
@@ -363,8 +372,8 @@ header .home__avatar__item img {
 header .scrolldown {
   position: absolute;
   bottom: 10%;
-  left: 50%;
-  transform: translate(-40%, 0);
+  left: 49%;
+  transform: translate(-50%, -10%);
 }
 header .scrolldown__box {
   width: 32px;
@@ -1254,7 +1263,7 @@ footer .footer__content .logo .st0 {
   }
 }
 footer .footer__content .menu__footer {
-  margin: 20px 0;
+  margin: 20px 0 5px;
 }
 footer .footer__content .menu__footer .list {
   display: flex;
