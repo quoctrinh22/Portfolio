@@ -167,7 +167,7 @@ header {
       &__box {
         position: relative;
         @include size(25vw, 25vw);
-        @include min-size(150px);
+        @include min-size(120px);
         border-radius: 50%;
         padding: 5px;
         display: flex;

@@ -42,7 +42,7 @@
         }
         &:hover .card__data::before {
           animation: light-animation 1.2s linear;
-          animation-delay: 1s;
+          animation-delay: 0.5s;
         }
         .card__article {
           position: relative;
@@ -50,7 +50,7 @@
           left: 0;
           transform-style: preserve-3d;
           @include size(300px, 220px);
-          transition: all 1s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+          transition: all 0.5s ease;
           border-radius: 12px;
           cursor: pointer;
           .card__imgbox img,
