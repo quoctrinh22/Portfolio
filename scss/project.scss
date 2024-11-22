@@ -36,6 +36,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 30px;
+      margin-bottom: 60px;
       .card__box {
         &:hover .card__article {
           transform: rotateY(180deg);

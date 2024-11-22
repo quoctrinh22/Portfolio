@@ -165,7 +165,7 @@ hr {
 }
 
 header {
-  background: url(../images/background.jpg) no-repeat;
+  background: url(../images/background.jpeg) no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -748,6 +748,7 @@ header .scrolldown__box::before {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 60px;
 }
 .project .project__content .project__card .card__box:hover .card__article {
   transform: rotateY(180deg);
