@@ -1008,7 +1008,8 @@ header .scrolldown__box::before {
 .contact .contact__content__info .contact__info__box {
   position: relative;
   display: flex;
-  padding: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .contact .contact__content__info .contact__info__box .icon {
   position: relative;
@@ -1384,7 +1385,8 @@ footer .copyright::before {
     margin-top: 150px !important;
   }
   .home__avatar__box {
-    padding: 3px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
   }
   .about__content__image {
     margin-top: 50px;
